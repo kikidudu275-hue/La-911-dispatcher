@@ -1,0 +1,94 @@
+# 911 DISPATCHER LA - LAPD + LAFD
+# by kikidudu275-hue - French to LA
+
+print("=== 911 DISPATCHER LOS ANGELES ===")
+print("Type your emergency (in French or English)")
+print("Ex: house fire, car accident, fight, illness, chemical leak")
+print()
+
+emergency = input("911, what is your emergency?: ").lower()
+
+print(f"\n[DISPATCH] Call received: '{emergency}'\n")
+
+# --- EASTER EGGS FR -> US ---
+if "samu" in emergency or "vsav" in emergency or "malaise" in emergency or "cardiaque" in emergency:
+
+print("🚑 -> LAFD Rescue Ambulance RA")
+
+print(" In France: VSAV/SAMU | In LA: Rescue Ambulance")
+
+print(" Sent: RA-88 + Engine 88 (paramedic)")
+
+if "fire" in emergency or "incendiary" in emergency or "burns" in emergency or "fire" in emergency:
+
+if "forest" in emergency or "hill" in emergency or "brush" in emergency or "Hollywood" in emergency:
+
+print("🔥 -> LAFD Brush Fire Response")
+
+print("Sent: Brush Patrol + Engine + Helicopter + Battalion Chief")
+
+if "house" in emergency or "apartment" in emergency:
+
+print("🏠🔥 -> LAFD Structure Fire")
+
+print("Sent: 2x Engine + 1x Truck + 1x Squad + 1x RA + Battalion")
+
+if "car" in emergency or "car" in emergency:
+
+print("🚗🔥 -> LAFD Car Fire")
+
+print("Sent: Engine + Squad")
+else:
+
+print("🔥 -> LAFD Fire Response")
+
+print(" Sent: Engine + Truck")
+
+elif "accident" in emergency or "crash" in emergency or "collision" in emergency:
+
+print("🚗💥 -> Accident + Injuries")
+
+print("LAFD: Engine + Rescue Ambulance + Squad (extrication)")
+
+print("LAPD: Police Unit for traffic")
+
+elif "fight" in emergency or "assault" in emergency or "gun" in emergency or "weapon" in emergency:
+
+print("🚨 -> LAPD + LAFD")
+
+print("LAPD: 2x Police Units + possible SWAT if weapon")
+
+print("LAFD: RA on standby (will only return after police security)")
+
+elif "chemical" in emergency or "leak" in emergency or "hazmat" in emergency or "gas" in emergency:
+
+print("☢️ -> LAFD HazMat")
+print("Sent: HazMat Squad 87 + Engine 87 + USAR + Battalion")
+print("Fun: Station 87 = LA Port Chemical Specialists")
+
+if "collapse" in emergency or "earthquake" in emergency or "building" in emergency:
+
+print("🏚️ -> LAFD USAR")
+
+print("Sent: USAR Task Force + 3x Engine + 2x Truck + Battalion")
+
+if "boat" in emergency or "port" in emergency or "drowning" in emergency or "drowning" in emergency:
+
+print("🌊 -> LAFD Water Rescue")
+print("Sent: Fire Boat + Rescue Boat + Helicopter + RA")
+
+else:
+
+print("❓ Emergency not recognized")
+print("Try: fire, accident, illness, (fight, chemical leak, etc.)
+
+If "police" or "bac" is in the emergency field:
+
+print("-> For police: see my LAPD project!")
+
+If "firefighter" or "18" is in the emergency field:
+
+print("-> In France it's 18, in LA it's 911! Type your emergency number in French, it works")
+
+print("\n--- Call ended ---")
+print("Average LAPD response time: 5-7 minutes") 
